@@ -29,23 +29,23 @@
     </div>
   </nav>
   <main class="d-flex justify-content-center">
-    <div class="card" style="width: 18rem; height: 18rem;">
-      <img src="/assets/CAFE.jpg" class="card-img-top" alt="Mi cafetera">
+    <div class="card " style="width: 18rem;">
+      <img src="/assets/CAFE.jpg" class="card-img-top mx-auto d-block" style="width: 15rem" alt="Mi cafetera">
       <div class="card-body">
         <h5 class="card-title">Cafetera</h5>
         <ul>
-          <li>Nivel de agua: <b id="color">Cargando...</b> </li>
+          <li>Nivel de agua: <b id="nivelWater">Cargando...</b> </li>
           <li>Temperatura: <b id="TempRange">Cargando...</b></li>
           <input type="range" class="custom-range" min="0" max="100" step="1" id="TempRange">
-          <li>Hora de preparar café: <b id="display">Cargando...</b></li>
+          <li>Hora de preparar café: <b id="HoraCafe">Cargando...</b></li>
           <form>
               <div class="form-group">
                 <input type="time">
               </div>
           </form>
         </ul>
-        <button type="button" class="btn btn-success" onclick="control.botones.encender()">ON</button>
-        <button type="button" class="btn btn-danger" onclick="control.botones.apagar()">OFF</button>
+        <button type="button" class="btn btn-success" onclick="cafe.botones.onCafe()">ON</button>
+        <button type="button" class="btn btn-danger" onclick="cafe.botones.offCafe()">OFF</button>
       </div>
     </div>
   </main>
