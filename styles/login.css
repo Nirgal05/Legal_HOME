@@ -57,7 +57,11 @@ body{
     background: #5352ed;
     cursor: pointer;
     border: solid #3742fa;
+}
 
+.form-box button a {
+    text-decoration-line: none;
+    color: white;
 }
 
 .form-box button[type="submit"]:hover{
