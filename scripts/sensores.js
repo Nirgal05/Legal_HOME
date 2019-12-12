@@ -2,10 +2,10 @@
 
 function activate(id) {
     let element = document.getElementById(id);
-    element.innerHTML = "Activado";
+    element.innerHTML = "Activo";
 }
 
 function deactivate(id) {
     let element = document.getElementById(id);
-    element.innerHTML = "Desactivado";
+    element.innerHTML = "Inactivo";
 }
