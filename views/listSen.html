@@ -1,12 +1,106 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Lista de sensores</title>
 </head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
 <body>
+    <h1 class="d-flex justify-content-center">Estado de los Sensores LEGAL HOME</h1>
+    <section>
+        <div class="container">
+            <table class="table table-striped table-dark">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Sensor</th>
+                        <th scope="col" style="width: 200px;">Estado</th>
+                        <th class="d-flex justify-content-center" scope="col">Botón</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th class="align-middle"scope="row">1</th>
+                        <td class="align-middle">Puerta Principal</td>
+                        <td class="align-middle"id="mainDoor">Activo</td>
+
+                        <td class="d-flex justify-content-around">
+                            <button type="button" class="btn btn-success"
+                                onclick="activate('mainDoor')">Activar</button>
+                            <button type="button" class="btn btn-danger"
+                                onclick="deactivate('mainDoor')">Desactivar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                            <th class="align-middle"scope="row">2</th>
+                            <td class="align-middle">Puerta Trasera</td>
+                            <td class="align-middle"id="backDoor">Activo</td>
     
+                            <td class="d-flex justify-content-around">
+                                <button type="button" class="btn btn-success"
+                                    onclick="activate('backDoor')">Activar</button>
+                                <button type="button" class="btn btn-danger"
+                                    onclick="deactivate('backDoor')">Desactivar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                                <th class="align-middle"scope="row">3</th>
+                                <td class="align-middle">Cochera</td>
+                                <td class="align-middle"id="garage">Activo</td>
+        
+                                <td class="d-flex justify-content-around">
+                                    <button type="button" class="btn btn-success"
+                                        onclick="activate('garage')">Activar</button>
+                                    <button type="button" class="btn btn-danger"
+                                        onclick="deactivate('garage')">Desactivar</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                    <th class="align-middle"scope="row">4</th>
+                                    <td class="align-middle">Cocina</td>
+                                    <td class="align-middle"id="kitchen">Activo</td>
+            
+                                    <td class="d-flex justify-content-around">
+                                        <button type="button" class="btn btn-success"
+                                            onclick="activate('kitchen')">Activar</button>
+                                        <button type="button" class="btn btn-danger"
+                                            onclick="deactivate('kitchen')">Desactivar</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                        <th class="align-middle"scope="row">5</th>
+                                        <td class="align-middle">Ventana 1</td>
+                                        <td class="align-middle" id="window">Activo</td>
+                
+                                        <td class="d-flex justify-content-around">
+                                            <button type="button" class="btn btn-success"
+                                                onclick="activate('window')">Activar</button>
+                                            <button type="button" class="btn btn-danger"
+                                                onclick="deactivate('window')">Desactivar</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                            <th class="align-middle"scope="row">6</th>
+                                            <td class="align-middle">Ventana 2</td>
+                                            <td class="align-middle" id="window2">Activo</td>
+                    
+                                            <td class="d-flex justify-content-around">
+                                                <button type="button" class="btn btn-success"
+                                                    onclick="activate('window2')">Activar</button>
+                                                <button type="button" class="btn btn-danger"
+                                                    onclick="deactivate('window2')">Desactivar</button>
+                                            </td>
+                                        </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <script src="../scripts/sensores.js"></script>
 </body>
+
 </html>
