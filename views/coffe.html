@@ -20,7 +20,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item active">
-            <a class="nav-link active" aria-disabled="true">Menú LEGAHOME</a>
+          <a class="nav-link active" aria-disabled="true">Menú LEGAHOME</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active" aria-disabled="true" id="alarmActiva">Alarma:</a>
@@ -36,12 +36,13 @@
         <ul>
           <li>Nivel de agua: <b id="nivelWater">Cargando...</b> </li>
           <li>Temperatura: <b id="TempSelect">Seleccionar</b></li>
-          <input type="range" class="custom-range" min="0" max="100" step="1" id="TempRange" onclick="cafe.TempRange.barra()" onkeydown="cafe.TempRange.barra()">
+          <input type="range" class="custom-range" min="0" max="100" step="1" id="TempRange"
+            onclick="cafe.TempRange.barra()" onkeydown="cafe.TempRange.barra()">
           <li>Hora de preparar café: <b id="HoraCafe">Seleccionar</b></li>
           <form>
-              <div class="form-group">
-                <input type="time" id="HoraSelect">
-              </div>
+            <div class="form-group">
+              <input type="time" id="HoraSelect">
+            </div>
           </form>
         </ul>
         <button type="button" class="btn btn-success" onclick="cafe.botones.onCafe()">ON</button>

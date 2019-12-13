@@ -3,16 +3,16 @@ const cafe = {
     alarmINActiva: "Alarma: INACTIVA",
     nivelWater: "Optimo", //El nivel de agua va ligado a un sensor
     TempRange: {
-        barra: function(){
+        barra: function () {
             let Temperatures = document.getElementById("TempRange");
-            document.getElementById("TempSelect").innerHTML = Temperatures.value+" °C"; //Temperatura seleccionada
+            document.getElementById("TempSelect").innerHTML = Temperatures.value + " °C"; //Temperatura seleccionada
         }
     },
     botones: {
         onCafe: function () {
             let alarmCafe = document.getElementById("alarmActiva");
             alarmCafe.innerHTML = cafe.alarmActiva; //Status de alarma café
-            let alarmas = document.getElementById("HoraSelect"); 
+            let alarmas = document.getElementById("HoraSelect");
             document.getElementById("HoraCafe").innerHTML = alarmas.value; //Hora del café
         },
         offCafe: function () {
