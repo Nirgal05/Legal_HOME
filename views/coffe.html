@@ -1,12 +1,61 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Cafetera</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <title>Cafetera</title>
 </head>
+
 <body>
-    
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Cafetera</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a href="#" class="nav-link">Menú <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <main class="d-flex justify-content-center">
+    <div class="card " style="width: 18rem;">
+      <img src="/assets/CAFE.jpg" class="card-img-top mx-auto d-block" style="width: 15rem" alt="Mi cafetera">
+      <div class="card-body">
+        <h5 class="card-title">Cafetera</h5>
+        <ul>
+          <li>Nivel de agua: <b id="nivelWater">Cargando...</b> </li>
+          <li>Temperatura: <b id="TempRange">Cargando...</b></li>
+          <input type="range" class="custom-range" min="0" max="100" step="1" id="TempRange">
+          <li>Hora de preparar café: <b id="HoraCafe">Cargando...</b></li>
+          <form>
+              <div class="form-group">
+                <input type="time">
+              </div>
+          </form>
+        </ul>
+        <button type="button" class="btn btn-success" onclick="cafe.botones.onCafe()">ON</button>
+        <button type="button" class="btn btn-danger" onclick="cafe.botones.offCafe()">OFF</button>
+      </div>
+    </div>
+  </main>
+  <section>
+
+  </section>
+  <footer>
+
+  </footer>
+  <script src="coffe.js"></script>
 </body>
+
 </html>
