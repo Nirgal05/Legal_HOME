@@ -12,7 +12,9 @@
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Cafetera</a>
+      <img src="https://i.shgcdn.com/b5ac8c16-2e62-4e22-9e2a-a92ae5c099f3/-/stretch/off/-/resize/3000x/-/quality/normal/"
+      width="30" height="30" class="d-inline-block align-top" alt="">
+      <a class="navbar-brand">LEGAHOME | Smart Home Digital Platform | Cafetera</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -20,32 +22,35 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <a href="#" class="nav-link">Menú <span class="sr-only">(current)</span></a>
+          <a class="nav-link active" href="services.html" aria-disabled="true">Menú</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          <a class="nav-link active" aria-disabled="true" id="alarmActiva">Alarma:</a>
         </li>
       </ul>
     </div>
   </nav>
   <main class="d-flex justify-content-center">
     <div class="card " style="width: 18rem;">
-      <img src="/assets/CAFE.jpg" class="card-img-top mx-auto d-block" style="width: 15rem" alt="Mi cafetera">
+      <img src="../assets/CAFE.jpg" class="card-img-top mx-auto d-block" style="width: 15rem" alt="Mi cafetera">
       <div class="card-body">
         <h5 class="card-title">Cafetera</h5>
         <ul>
           <li>Nivel de agua: <b id="nivelWater">Cargando...</b> </li>
-          <li>Temperatura: <b id="TempRange">Cargando...</b></li>
-          <input type="range" class="custom-range" min="0" max="100" step="1" id="TempRange">
-          <li>Hora de preparar café: <b id="HoraCafe">Cargando...</b></li>
+          <li>Temperatura: <b id="TempSelect">Seleccionar</b></li>
+          <input type="range" class="custom-range" min="0" max="100" step="1" id="TempRange"
+            onclick="cafe.TempRange.barra()" onkeydown="cafe.TempRange.barra()">
+          <li>Hora de preparar café: <b id="HoraCafe">Seleccionar</b></li>
           <form>
-              <div class="form-group">
-                <input type="time">
-              </div>
+            <div class="form-group">
+              <input type="time" id="HoraSelect">
+            </div>
           </form>
         </ul>
-        <button type="button" class="btn btn-success" onclick="cafe.botones.onCafe()">ON</button>
-        <button type="button" class="btn btn-danger" onclick="cafe.botones.offCafe()">OFF</button>
+        <div class="d-flex justify-content-center">
+            <button type="button" class="btn btn-success" onclick="cafe.botones.onCafe()">ON</button>
+            <button type="button" class="btn btn-danger" onclick="cafe.botones.offCafe()">OFF</button>
+        </div>
       </div>
     </div>
   </main>
@@ -55,7 +60,7 @@
   <footer>
 
   </footer>
-  <script src="coffe.js"></script>
+  <script src="../scripts/coffe.js"></script>
 </body>
 
 </html>
