@@ -1,0 +1,22 @@
+
+.mainContainer {
+
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+body {
+    background: grey;  
+ }
+
+.buttons-container {
+    display: flex;
+    justify-content: space-between
+
+
+}
+
+.btn-tavo {
+    background-color: lawngreen;
+}
